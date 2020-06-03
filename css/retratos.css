@@ -1,0 +1,231 @@
+body {
+  font-family: 'Dancing Script';
+}
+
+
+/*** HEADER ***/
+header {
+    background-color: #5B7989;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    animation-name: entrada;
+    animation-duration: 1.5s;
+}
+
+header h1 {
+  text-shadow: 2px 2px 2px #02010A;
+  text-indent: 5px;
+  color: white;
+  display: inline-block;
+}
+
+.contenedor {
+  background-color: #D5C75F;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  margin: 0 15px;
+  font-size: 1.2em;
+}
+
+#retratos {
+  text-decoration: none;
+}
+
+
+/***CONTENT***/
+.galerypt1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#blur {
+  width: 30%;
+  margin: 1%;
+  order: 1;
+  filter: blur(10px);
+}
+
+#gray1 {
+  width: 30%;
+  margin: 1%;
+  order: 2;
+  filter: grayscale(100%);
+}
+
+#sepia {
+  width: 30%;
+  margin: 1%;
+  order: 3;
+  filter: sepia(90%);
+}
+
+.galerypt2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#gray2 {
+  width: 30%;
+  margin: 1%;
+  order: 1;
+  filter: grayscale(100%);
+}
+
+#filter {
+  width: 30%;
+  margin: 1%;
+  order: 2;
+}
+
+#gray3 {
+  width: 30%;
+  margin: 1%;
+  order: 3;
+  filter: grayscale(100%);
+}
+
+
+/***FOOTER***/
+footer {
+  background-color: #C6D5C5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em;
+}
+
+#contact {
+  width: 25%;
+  margin: 5%;
+  order: 1;
+}
+
+#terms {
+  width: 25%;
+  margin: 5%;
+  order: 2;
+}
+
+#social {
+  width: 25%;
+  margin: 5%;
+  order: 3;
+}
+
+#copyright {
+  width: 25%;
+  margin: 5%;
+  order: 4;
+}
+
+
+/***Animaciones***/
+@-webkit-keyframes entrada {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+
+/***MEDIA_QUERIES***/
+
+@media (max-width:900px) {
+header {
+  display: block;
+  text-align: center;
+}
+
+#inicio, #paisajes, #retratos {
+  width: 30%;
+  margin: 2%;
+}
+
+.galerypt1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#blur {
+  width: 80%;
+  margin: 5%;
+  order: 1;
+}
+
+#gray1 {
+  width: 80%;
+  margin: 5%;
+  order: 2
+}
+
+#sepia {
+  width: 80%;
+  margin: 5%;
+  order: 3
+}
+
+.galerypt2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#gray2 {
+  width: 80%;
+  margin: 5%;
+  order: 1
+}
+
+#filter {
+  width: 80%;
+  margin: 5%;
+  order: 2;
+}
+
+#gray3 {
+  width: 80%;
+  margin: 5%;
+  order: 3
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact {
+  width: 100%;
+  order: 1;
+}
+
+#terms {
+  width: 100%;
+  order: 2;
+}
+
+#social {
+  width: 100%;
+  order: 3;
+}
+
+#copyright {
+  width: 100%;
+  order: 4;
+}
+}
